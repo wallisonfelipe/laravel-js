@@ -7,7 +7,6 @@ import Executor from './executor.mjs';
 function compileAndRun(lsCode) {
     const tokenizer = new Tokenizer(lsCode);
     const tokens = tokenizer.tokenize();
-    console.log("Tokens:", tokens);
     
     const parser = new Parser(tokens);
     const jsCode = parser.parse();
